@@ -1,8 +1,8 @@
 #!/bin/bash
-person1=sri
-person2=venkat
+PERSON1=sri
+PERSON2=venkat
 
-echo "$person1: hi $person2,how r u"
-echo "$person2: i m fine $person1,how r u"
-echo "$person1: fine $person2"
-echo "$person2: good $person1"
+echo "$PERSON1: hi $PERSON2,how r u"
+echo "$PERSON2: i m fine $PERSON1,how r u"
+echo "$PERSON1: fine $PERSON2"
+echo "$PERSON2: good $PERSON1"
