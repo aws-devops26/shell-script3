@@ -5,4 +5,4 @@ person2=venkat
 echo "$person1: hi $person2,how r u"
 echo "$person2: i m fine $person1,how r u"
 echo "$person1: fine $person2"
-echo "$person2: good"
+echo "$person2: good $person1"
