@@ -20,7 +20,7 @@ then
     echo -e "$R ERROR:: please run with root access $N"
     exit 1
 else
-    echo " $G u r root user $N "
+    echo -e " $G u r root user $N "
 fi
 yum install mysql -y
 VALIDATE $? " installing my sql"
