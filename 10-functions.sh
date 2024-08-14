@@ -6,12 +6,12 @@ Y="\e[33m"
 N="\e[0m"
 
 VALIDATE() {
-    if [$1 -ne 0 ]
+    if [ $1 -ne 0 ]
     then
-        echo " ERROR:: $2.....FAILED"
+        echo -e " $R ERROR:: $2.....FAILED $N"
         exit 1
     else
-        echo " $2.....SUCCESS"
+        echo -e " $Y $2.....SUCCESS $N"
     fi
 
 }
