@@ -1,5 +1,7 @@
 #!/bin/bash
-ID=$(id -u)
+ID=$(id -u) 
+TIMESTAMP=$(date +%F-%H-%M-%S)
+LOGFILE="/tmp/$0-$TIMESTAMP.log"
 R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
@@ -22,7 +24,7 @@ then
 else
     echo -e " $G u r root user $N "
 fi
-yum install mysql -y
+yum install mysql -y &>> $LOGFILE
 VALIDATE $? " installing my sql"
-yum install git -y
+yum install git -y &>> $LOGFILE
 VALIDATE $? " installing git"
