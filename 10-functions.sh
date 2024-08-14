@@ -1,9 +1,9 @@
 #!/bin/bash
 ID=$(id -u)
-R=\e[31m
-G=\e[32m
-Y=\e[33m
-N=\e[0m
+R= \e[31m
+G= \e[32m
+Y= \e[33m
+N= \e[0m
 
 VALIDATE() {
     if [$1 -ne 0 ]
@@ -22,7 +22,7 @@ then
 else
     echo " $G u r root user $N "
 fi
-yum install musql -y
+yum install mysql -y
 VALIDATE $? " installing my sql"
 yum install git -y
 VALIDATE $? " installing git"
