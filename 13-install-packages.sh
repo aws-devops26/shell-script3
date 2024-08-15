@@ -6,8 +6,7 @@ Y="\e[33m"
 N="\e[0m"
 TIMESTAMP=$(date +%F-%H-%M-%S)
 LOGFILE="\tmp\$0-$TIMESTAMP.log"
-VALIDATE()
-{
+VALIDATE() {
     if [ $1 -ne 0 ]
     then
         echo -e "$R ERROR:: $2...FAILED $N"
