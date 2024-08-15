@@ -5,5 +5,5 @@ Y="\e[33m"
 N="\e[0m"
 for i in {1..100}
 do
-    echo -e " $R 1 to 100 no s $Y ..$i $N"
+    echo -e " $R $i $N"
 done
