@@ -12,10 +12,11 @@ VALIDATE() {
         echo -e "$R ERROR:: $2...FAILED $N"
         exit 1
     else
-        echo -e " $G $2...SUCCESS $N"
+        echo -e "$G $2...SUCCESS $N"
     fi
 
 }
+
 if [ $ID -ne 0 ]
 then
     echo -e " $R ERROR:: please run with root access $N"
@@ -25,6 +26,7 @@ then
 fi
 # git mysql postfix net-tools
 # package=git for 1st time
+
 for package in $@
 do
     yum list installed $package &>> LOGFILE
