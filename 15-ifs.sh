@@ -11,5 +11,5 @@ do
     echo " username: $username"
     echo " user id: $user_id"
     echo " group id: $group_id"
-    echo " user full name: $user_fullname
+    echo " user full name: $user_fullname "
 done <<< $file
