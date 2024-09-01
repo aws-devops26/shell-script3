@@ -2,7 +2,7 @@
 file=/etc/passwd
 R="\e[31m"
 N="\e[0m"
-if [ ! -f $file]
+if [ ! -f $file ]
 then
     echo -e "$R source file is: $file does not exists. $N"
 fi
