@@ -12,4 +12,5 @@ do
         message+="HIGH DISK USAGE ON $partition: $usage\n"
     fi
 done <<< $DISK_USAGE
+
 echo -e "Message:$message"
