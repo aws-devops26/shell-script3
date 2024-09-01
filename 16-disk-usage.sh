@@ -1,4 +1,4 @@
-!#/bin/bash
+#!/bin/bash
 DISK_USAGE=$(df -hT | grep -vE 'tmp|file')
 DISK_THRESHOLD=1
 message=""
